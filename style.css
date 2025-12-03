@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar{
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo{
+  font-size: 28px;
+  font-weight: 600;
+  color: #00e1ff;
+  text-decoration: underline;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.nav-links{
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a{
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.nav-links a:hover{
+  color: #00e1ff;
+}
+
+/* BUTTON */
+.btn{
+  background: #00e1ff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: .3s;
+}
+.btn:hover{
+  background: #00faff;
+  transform: translateY(-2px);
+}
+
+/* HERO */
+.hero{
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 60px 0;
+}
+
+.hero-text{
+  max-width: 500px;
+}
+
+.hero-text h1{
+  font-size: 50px;
+}
+
+.hero-text span{
+  color: #00e1ff;
+}
+
+.hero-text p{
+  margin: 15px 0;
+  opacity: 0.8;
+}
+
+.hero-btn{
+  display: inline-block;
+  background: #00e1ff;
+  padding: 12px 30px;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.hero-btn:hover{
+  background: #00faff;
+  transform: translateY(-3px);
+}
+
+/* HERO IMAGE */
+.hero-img img{
+  width: 380px;
+  border-radius: 20px;
+}
+
+/* ANIMATION */
+.fade-up{
+  opacity: 0;
+  animation: fadeUp 1s forwards ease;
+}
+@keyframes fadeUp{
+  0%{opacity: 0; transform: translateY(40px);}
+  100%{opacity: 1; transform: translateY(0);}
+}
+
+/* FEATURES */
+.features{
+  padding: 60px;
+}
+.section-title{
+  text-align: center;
+  font-size: 40px;
+  color: #00e1ff;
+  margin-bottom: 40px;
+}
+
+.feature-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 25px;
+}
+
+.feature-card{
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 15px;
+  transition: .3s;
+}
+.feature-card:hover{
+  background: #00e1ff;
+  color: #000;
+  transform: translateY(-7px);
+}
+
+.feature-card h3{
+  color: #be57fa;
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+
+/* FOOTER */
+footer{
+  text-align: center;
+  padding: 20px;
+  opacity: .7;
+}
+
+
